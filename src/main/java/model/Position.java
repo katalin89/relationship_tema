@@ -7,6 +7,13 @@ public class Position {
     private int monthlyrate;
     private  int workingDaysPerMonth;
 
+    public  Position(String name, int dailyrate,int monthlyrate,int workingDaysPerMonth){
+        this.name=name;
+        this.dailyrate=dailyrate;
+        this.monthlyrate=monthlyrate;
+        this.workingDaysPerMonth=workingDaysPerMonth;
+    }
+
     public  Position(int id,String name, int dailyrate,int monthlyrate,int workingDaysPerMonth){
         this.id=id;
         this.name=name;
@@ -67,5 +74,4 @@ public class Position {
         Position position=(Position) obj;
         return  position.monthlyrate==this.monthlyrate;
     }
-
 }

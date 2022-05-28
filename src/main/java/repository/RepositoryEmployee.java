@@ -18,7 +18,6 @@ public class RepositoryEmployee  extends  Repository{
         insertTo += String.format("'%s','%s','%s', '%s','%s','%s','%s',%b,%d", employee.getBarcode(), employee.getLastName(), employee.getFirstName(),employee.getMiddleName(),employee.getDateOfBirth(),employee.getAddress(),employee.getContact(),employee.isStatus(),employee.getPositionId());
         insertTo += ")";
         executeStatement(insertTo);
-
     }
 
 

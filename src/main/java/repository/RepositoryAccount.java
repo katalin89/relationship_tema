@@ -2,7 +2,6 @@ package repository;
 
 import model.Account;
 
-import javax.xml.transform.Result;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +20,7 @@ public class RepositoryAccount extends  Repository {
         executeStatement(insertTo);
 
     }
-    public  void stergeAccountById(int id){
+    public void stergeAccountById(int id){
         String text=String.format("delete from account where  id=%d",id);
         executeStatement(text);
     }
@@ -49,7 +48,7 @@ public class RepositoryAccount extends  Repository {
         }
     }
 
-    public List<Account>allAccounts(){
+    public List<Account> allAccounts(){
         ResultSet set=allAccount();
         List<Account> accounts=new ArrayList<>();
         try{

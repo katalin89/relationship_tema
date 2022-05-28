@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class RepositoryPayrollTest {
     @Test
     public  void  insert(){
@@ -21,14 +19,12 @@ class RepositoryPayrollTest {
     public  void sterge(){
         RepositoryPayroll repositoryPayroll=new RepositoryPayroll();
         repositoryPayroll.stergePayrollById(5);
-
-
     }
 
     @Test
     public  void update(){
         RepositoryPayroll repositoryPayroll=new RepositoryPayroll();
-        repositoryPayroll.update(4,100);
+        repositoryPayroll.updateOvertimePay(4,100);
     }
 
     @Test
@@ -39,14 +35,11 @@ class RepositoryPayrollTest {
 
     @Test
     public void allList() {
-
         RepositoryEmployee repositoryEmployee= new RepositoryEmployee();
         List<Employee> employees=repositoryEmployee.allEmployees();
         for(Employee e:employees){
             System.out.println(e.toString());
         }
-
-
     }
 
 
