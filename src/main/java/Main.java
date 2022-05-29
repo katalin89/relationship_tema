@@ -5,6 +5,7 @@ import repository.Repository;
 import view.ViewAccount;
 import view.ViewEmployee;
 import view.ViewPayroll;
+import view.ViewPosition;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,5 +18,8 @@ public class Main {
 
         ViewPayroll viewPayroll = new ViewPayroll();
         viewPayroll.play();
+
+//        ViewPosition viewPosition=new ViewPosition();
+//        viewPosition.play();
     }
 }

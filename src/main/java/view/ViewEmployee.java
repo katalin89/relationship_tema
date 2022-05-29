@@ -18,7 +18,7 @@ public class ViewEmployee {
     public void meniu(){
         System.out.println("Apasa tasta 1 pentru a creea un employee.");
         System.out.println("Apasa tasta 2 pentru sterge un employee dupa id.");
-        System.out.println("Apasa tasta 3 pentru a modifica password.");
+        System.out.println("Apasa tasta 3 pentru a modifica barcode-ul.");
         System.out.println("Apasa tasta 5 pentru afisa toate employeeurile.");
     }
 
@@ -54,6 +54,7 @@ public class ViewEmployee {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduceti id-ul:");
         int id = scanner.nextInt();
+        scanner.nextLine();// sa citesca enterul
         System.out.println("Introduceti barcode-ul:");
         String barcode = scanner.nextLine();
         repositoryEmployee.updateBarcode(id,barcode);

@@ -18,8 +18,8 @@ public class ViewPayroll {
     public void meniu() {
         System.out.println("Apasa tasta 1 pentru a creea un payroll.");
         System.out.println("Apasa tasta 2 pentru sterge un payroll dupa id.");
-        System.out.println("Apasa tasta 3 pentru a modifica password.");
-        System.out.println("Apasa tasta 5 pentru afisa toate payrollurile.");
+        System.out.println("Apasa tasta 3 pentru a modifica over time pay.");
+        System.out.println("Apasa tasta 4 pentru afisa toate payrollurile.");
     }
 
     public void play() {
@@ -37,9 +37,9 @@ public class ViewPayroll {
                     stergerepayrollDupaId();
                     break;
                 case 3:
-                    modificareBarcode();
+                    modificareOvertimePay();
                     break;
-                case 5:
+                case 4:
                     afisarepayroll();
                     break;
             }
@@ -54,7 +54,7 @@ public class ViewPayroll {
         }
     }
 
-    private void modificareBarcode() {
+    private void modificareOvertimePay() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduceti id-ul:");
         int id = scanner.nextInt();
